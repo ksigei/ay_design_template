@@ -7,6 +7,7 @@ import Stack from "@mui/material/Stack";
 import { createStyles } from "@mui/material/styles";
 import account from "../assets/account.png";
 import logo from "../assets/logo.png";
+import { APPBAR } from "../constants";
 
 export default function AppBar() {
   return (
@@ -24,7 +25,7 @@ export default function AppBar() {
 const styles = createStyles({
   appBar: {
     backgroundColor: "primary.light",
-    height: 50,
+    height: APPBAR.height,
   },
   container: {
     display: "flex",

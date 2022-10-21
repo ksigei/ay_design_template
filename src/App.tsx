@@ -7,6 +7,7 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 
 import "./App.css";
 import AppBar from "./components/AppBar";
+import Landing from "./sections/Landing";
 
 import { ThemeProvider } from "./theme";
 function App() {
@@ -16,10 +17,15 @@ function App() {
         styles={({ palette }) => ({
           body: {
             background: palette.background.paper,
+            fontFamily: "avenir",
           },
         })}
       />
+      {/* Top appbar */}
       <AppBar />
+
+      {/* main landing */}
+      <Landing />
     </ThemeProvider>
   );
 }
