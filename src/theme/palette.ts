@@ -9,6 +9,9 @@ const palette: ThemeOptions["palette"] = {
   secondary: {
     main: "#F24397",
   },
+  background: {
+    paper: "#FDF8F4",
+  },
 };
 
 export default palette;
