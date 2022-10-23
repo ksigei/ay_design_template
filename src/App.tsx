@@ -10,6 +10,7 @@ import AppBar from "./components/AppBar";
 import Page from "./components/Page";
 import Landing from "./sections/Landing";
 import ProgramStructure from "./sections/ProgramStructure";
+import Schedule from "./sections/Schedule";
 
 import { ThemeProvider } from "./theme";
 function App() {
@@ -33,6 +34,10 @@ function App() {
         {/* structure of program */}
         <ProgramStructure />
       </Page>
+
+      {/* schedule  */}
+
+      <Schedule />
     </ThemeProvider>
   );
 }
