@@ -3,6 +3,11 @@
   src: url("../public/fonts/Avenir LT Std 35 Light.otf");
   font-weight: 300;
 }
+@font-face {
+  font-family: "avenir";
+  src: url("../public/fonts/Avenir\ LT\ Std\ 95\ Black.otf");
+  font-weight: 900;
+}
 
 body {
   font-family: "avenir";

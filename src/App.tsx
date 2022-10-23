@@ -7,7 +7,9 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 
 import "./App.css";
 import AppBar from "./components/AppBar";
+import Page from "./components/Page";
 import Landing from "./sections/Landing";
+import ProgramStructure from "./sections/ProgramStructure";
 
 import { ThemeProvider } from "./theme";
 function App() {
@@ -21,11 +23,16 @@ function App() {
           },
         })}
       />
-      {/* Top appbar */}
-      <AppBar />
+      <Page>
+        {/* Top appbar */}
+        <AppBar />
 
-      {/* main landing */}
-      <Landing />
+        {/* main landing */}
+        <Landing />
+
+        {/* structure of program */}
+        <ProgramStructure />
+      </Page>
     </ThemeProvider>
   );
 }

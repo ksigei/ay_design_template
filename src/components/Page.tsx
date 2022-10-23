@@ -1,28 +1,29 @@
-import Container, { ContainerProps } from "@mui/material/Container";
-import { ReactNode } from "react";
+import { styled } from "@mui/material/styles";
+import { ComponentProps, ReactNode } from "react";
 import floral from "../assets/floral.png";
 import { APPBAR } from "../constants";
 
 type Props = {
   children: ReactNode;
   disablePadding?: boolean;
-} & ContainerProps;
+} & ComponentProps<typeof Main>;
+
+const Main = styled("main")(() => ({
+  backgroundImage: `url(${floral})`,
+  width: "100%",
+  backgroundSize: "contain",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "right bottom",
+  alignItems: "start",
+  justifyContent: "start",
+  display: "flex",
+  flexDirection: "column",
+}));
 
 export default function Page({ children, disablePadding, ...props }: Props) {
   return (
-    <Container
-      component={"div"}
+    <Main
       sx={{
-        backgroundImage: `url(${floral})`,
-        width: "100%",
-        height: "100vh",
-        backgroundSize: "contain",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "right bottom",
-        alignItems: "start",
-        justifyContent: "start",
-        display: "flex",
-        flexDirection: "column",
         ...props.sx,
         ...(!disablePadding && {
           paddingTop: `${APPBAR.height}px`,
@@ -30,6 +31,6 @@ export default function Page({ children, disablePadding, ...props }: Props) {
       }}
     >
       {children}
-    </Container>
+    </Main>
   );
 }
