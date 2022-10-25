@@ -4,6 +4,7 @@ export const fontWeights = {
   avenir: {
     300: 300,
     900: 900,
+    400: 400,
   },
 };
 

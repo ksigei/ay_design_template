@@ -8,7 +8,7 @@ import { styled } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { capitalCase } from "capital-case";
-import schedule from "../assets/schedule.png";
+import schedule from "../../assets/schedule.png";
 
 const Schedule = () => {
   return (

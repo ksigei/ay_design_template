@@ -6,7 +6,7 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import { Fragment } from "react";
-import pieChart from "../assets/pie-chart.png";
+import pieChart from "../../assets/pie-chart.png";
 
 export default function ProgramStructure() {
   return (

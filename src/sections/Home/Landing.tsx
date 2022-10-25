@@ -10,8 +10,8 @@ import Tabs from "@mui/material/Tabs";
 import Typography from "@mui/material/Typography";
 import { Fragment, useRef, useState } from "react";
 // @ts-ignore
-import abstract from "../assets/abstract.mp4";
-import { fontWeights } from "../theme/typography";
+import abstract from "../../assets/abstract.mp4";
+import { fontWeights } from "../../theme/typography";
 
 const isVideoPlaying = (video: HTMLVideoElement) =>
   !!(

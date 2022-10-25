@@ -5,6 +5,11 @@
 }
 @font-face {
   font-family: "avenir";
+  src: url("../public/fonts/Avenir\ LT\ Std\ 65\ Medium.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "avenir";
   src: url("../public/fonts/Avenir\ LT\ Std\ 95\ Black.otf");
   font-weight: 900;
 }
