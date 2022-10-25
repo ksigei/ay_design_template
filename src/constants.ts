@@ -4,5 +4,5 @@ export const APPBAR = {
 
 export const fonts = {
   avenir: "avenir",
-  avenir95: "avenir 95",
+  roboto: "'Roboto', sans-serif",
 };

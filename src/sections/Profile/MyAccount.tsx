@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import user from "../../assets/account.png";
 import { APPBAR } from "../../constants";
 import { fontWeights } from "../../theme/typography";
+import AccountInfo from "./AccountInfo";
 
 export default function MyAccount() {
   return (
@@ -36,6 +37,8 @@ export default function MyAccount() {
           </EditButton>
         </div>
       </Box>
+      {/*  */}
+      <AccountInfo />
     </Container>
   );
 }

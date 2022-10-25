@@ -6,6 +6,9 @@ export const fontWeights = {
     900: 900,
     400: 400,
   },
+  roboto: {
+    700: 700,
+  },
 };
 
 const typography: ThemeOptions["typography"] = {
@@ -14,7 +17,10 @@ const typography: ThemeOptions["typography"] = {
   fontWeightLight: fontWeights.avenir[300],
   fontWeightMedium: fontWeights.avenir[300],
   fontWeightRegular: fontWeights.avenir[300],
-
+  allVariants: {
+    fontFamily: "avenir",
+    fontWeight: fontWeights.avenir[300],
+  },
   body1: {
     fontSize: 20,
   },

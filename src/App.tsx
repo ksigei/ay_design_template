@@ -1,13 +1,9 @@
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
-
 import GlobalStyles from "@mui/material/GlobalStyles";
 import { RouterProvider } from "react-router-dom";
+import { fonts } from "./constants";
 
-import "./App.css";
 import router from "./router";
+import Footer from "./sections/Footer";
 
 import { ThemeProvider } from "./theme";
 function App() {
@@ -17,11 +13,13 @@ function App() {
         styles={({ palette }) => ({
           body: {
             background: palette.background.paper,
-            fontFamily: "avenir",
+            fontFamily: fonts.avenir,
           },
         })}
       />
       <RouterProvider router={router} />
+
+      <Footer />
     </ThemeProvider>
   );
 }

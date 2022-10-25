@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "avenir";
+  src: url("../public/fonts/Avenir LT Std 35 Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "avenir";
+  src: url("../public/fonts/Avenir\ LT\ Std\ 65\ Medium.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "avenir";
+  src: url("../public/fonts/Avenir\ LT\ Std\ 95\ Black.otf");
+  font-weight: 900;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "avenir";
 }
