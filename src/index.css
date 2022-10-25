@@ -14,6 +14,10 @@
   font-weight: 900;
 }
 
-body {
+body,
+html,
+#root {
   font-family: "avenir";
+  padding: 0;
+  margin: 0;
 }
