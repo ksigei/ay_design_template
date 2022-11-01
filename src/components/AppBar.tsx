@@ -17,7 +17,10 @@ export default function AppBar() {
     <Fragment>
       <MUIAppbar elevation={0} sx={styles.appBar}>
         <Container sx={styles.container}>
-          <img src={logo} height={45} alt="" />
+          <NavLink to="/">
+            <img src={logo} height={45} alt="" />
+          </NavLink>
+
           <Box flexGrow={1} />
           <Stack spacing={2}></Stack>
           <NavLink to="/aboutus" style={{
@@ -32,7 +35,13 @@ export default function AppBar() {
           }}>
             Contact Us
           </NavLink>
-          <Avatar component={ButtonBase} src={account} />
+
+          <NavLink to="/profile" style={{
+            textDecoration: "none",
+            color: "#000000"
+          }}>
+            <Avatar component={ButtonBase} src={account} />
+          </NavLink>
         </Container>
       </MUIAppbar>
       <Outlet />
